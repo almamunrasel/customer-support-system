@@ -7,7 +7,7 @@ import message from '../../assets/fi_6244710.png'
 const Footer = () => {
   return (
     <div className='bg-black'>
-      <div className='footer-container max-w-300  mx-auto flex justify-around mt-10 text-white py-20'>
+      <div className='footer-container max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start gap-10 mt-10 py-12 px-6 text-white text-center md:text-left'>
         <div className='w-[20%]'>
           <h1>CS-- Ticket System</h1>
           <p className='text-[#a1a1aa] text-sm mt-2'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>

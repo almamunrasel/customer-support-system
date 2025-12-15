@@ -11,7 +11,7 @@ const CTickets = ({cTicketsPromises,tasks,setTasks,customertickets,setcustomerTi
  
 
   return (
-    <div className='grid grid-cols-2 gap-x-7'>
+    <div className='grid grid-cols-1 md:grid-cols-2 gap-x-7'>
 
       {customertickets.length===0? <h1 className='mt-20 text-center text-4xl'>there is no ticket to do work</h1> :
       
