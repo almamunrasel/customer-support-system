@@ -5,7 +5,7 @@ import MainBanner from './Components/Mainbanner/MainBanner'
 import Navbar from './Components/Navbar/Navbar'
 import PendingTasks from './Components/PendingTask/PendingTasks';
 import ResolvedTasks from './Components/ResolvedTask/ResolvedTasks';
-
+  import { toast, ToastContainer } from 'react-toastify';
 
 const fetchcTickets = async()=>{
   const res =await fetch('/issue.json');
@@ -29,7 +29,7 @@ function App() {
     setTasks(filteredtask);
     const filteredTickets = customertickets.filter(ply=>ply.id !==t.id);
     setcustomerTickets(filteredTickets);
-  
+    toast('successfully completed task');
  }
   
 return (
@@ -55,7 +55,7 @@ return (
 
       </div>
     </div>
-      
+      <ToastContainer />
     </>
   )
 }

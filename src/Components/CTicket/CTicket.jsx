@@ -2,6 +2,7 @@ import React from 'react';
 import circle from '../../assets/circle.png';
 import calsign from '../../assets/ri_calendar-line.png'
 import yellow from '../../assets/yellow-circle.png'
+import { toast } from 'react-toastify';
 
 const CTicket = ({ticket,tasks,setTasks}) => {
 
@@ -10,6 +11,7 @@ const CTicket = ({ticket,tasks,setTasks}) => {
 
   const handleSelected=(ticketData)=>{
     setTasks([...tasks,ticketData]);
+    toast("added to task queue");
   }
   return (
     
