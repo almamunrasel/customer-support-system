@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar/Navbar'
 import PendingTasks from './Components/PendingTask/PendingTasks';
 import ResolvedTasks from './Components/ResolvedTask/ResolvedTasks';
   import { toast, ToastContainer } from 'react-toastify';
+import Footer from './Components/Footer/Footer';
 
 const fetchcTickets = async()=>{
   const res =await fetch('/issue.json');
@@ -54,6 +55,10 @@ return (
          <ResolvedTasks resolved={resolved}></ResolvedTasks>
 
       </div>
+    </div>
+
+    <div>
+      <Footer></Footer>
     </div>
       <ToastContainer />
     </>
